@@ -6,10 +6,14 @@ var script$1 = {
   name: 'InputText'
 };
 
-const _hoisted_1 = { type: "text" };
+const _hoisted_1$1 = /*#__PURE__*/vue.createElementVNode("input", { type: "text" }, null, -1 /* HOISTED */);
+const _hoisted_2$1 = /*#__PURE__*/vue.createElementVNode("p", null, "[DEV] BRANCH input", -1 /* HOISTED */);
 
 function render$1(_ctx, _cache, $props, $setup, $data, $options) {
-  return (vue.openBlock(), vue.createElementBlock("input", _hoisted_1))
+  return (vue.openBlock(), vue.createElementBlock(vue.Fragment, null, [
+    _hoisted_1$1,
+    _hoisted_2$1
+  ], 64 /* STABLE_FRAGMENT */))
 }
 
 script$1.render = render$1;
@@ -19,8 +23,14 @@ var script = {
   name: 'InputTextarea'
 };
 
+const _hoisted_1 = /*#__PURE__*/vue.createElementVNode("textarea", null, null, -1 /* HOISTED */);
+const _hoisted_2 = /*#__PURE__*/vue.createElementVNode("p", null, "[DEV] BRANCH textarea", -1 /* HOISTED */);
+
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (vue.openBlock(), vue.createElementBlock("textarea"))
+  return (vue.openBlock(), vue.createElementBlock(vue.Fragment, null, [
+    _hoisted_1,
+    _hoisted_2
+  ], 64 /* STABLE_FRAGMENT */))
 }
 
 script.render = render;
