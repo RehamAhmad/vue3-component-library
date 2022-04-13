@@ -2,36 +2,23 @@
 
 var vue = require('vue');
 
-var script$1 = {
-  name: 'InputText'
-};
-
-const _hoisted_1$1 = {
-  type: "checkbox",
-  name: "[DEV] BRANCH input"
-};
-
-function render$1(_ctx, _cache, $props, $setup, $data, $options) {
-  return (vue.openBlock(), vue.createElementBlock("input", _hoisted_1$1))
-}
-
-script$1.render = render$1;
-script$1.__file = "src/InputText.vue";
-
 var script = {
-  name: 'InputTextarea'
+  name: 'DevButton'
 };
 
-const _hoisted_1 = { name: "[DEV] BRANCH textarea" };
+const _hoisted_1 = {
+  name: "[DEV] BRANCH button",
+  style: {"background-color":"#a80000","border-color":"#a80000","color":"#fff","width":"200px","height":"80px"}
+};
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (vue.openBlock(), vue.createElementBlock("textarea", _hoisted_1))
+  return (vue.openBlock(), vue.createElementBlock("button", _hoisted_1))
 }
 
 script.render = render;
-script.__file = "src/InputTextarea.vue";
+script.__file = "src/DevButton.vue";
 
-var components = { InputTextarea: script, InputText: script$1 };
+var components = { DevButton: script };
 
 const plugin = {
   install (Vue) {
