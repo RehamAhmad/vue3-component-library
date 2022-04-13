@@ -1,16 +1,19 @@
-import { openBlock, createElementBlock } from 'vue';
+import { openBlock, createElementBlock, toDisplayString } from 'vue';
 
 var script = {
-  name: 'DevButton'
+  name: 'DevButton',
+  props: {
+    buttonText: String
+  }
 };
 
 const _hoisted_1 = {
   name: "[DEV] BRANCH button",
-  style: {"background-color":"#a80000","border-color":"#a80000","color":"#fff","width":"200px","height":"80px"}
+  style: {"background-color":"#a80000","border-color":"#a80000","color":"#fff","width":"167","height":"40"}
 };
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (openBlock(), createElementBlock("button", _hoisted_1))
+  return (openBlock(), createElementBlock("button", _hoisted_1, toDisplayString($props.buttonText), 1 /* TEXT */))
 }
 
 script.render = render;
