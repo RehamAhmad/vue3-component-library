@@ -1,16 +1,16 @@
-import { openBlock, createElementBlock, resolveComponent, createBlock } from 'vue';
+import { openBlock, createElementBlock } from 'vue';
 
 var script$1 = {
   name: 'InputText'
 };
 
-const _hoisted_1 = {
+const _hoisted_1$1 = {
   type: "checkbox",
   name: "[DEV] BRANCH input"
 };
 
 function render$1(_ctx, _cache, $props, $setup, $data, $options) {
-  return (openBlock(), createElementBlock("input", _hoisted_1))
+  return (openBlock(), createElementBlock("input", _hoisted_1$1))
 }
 
 script$1.render = render$1;
@@ -20,10 +20,10 @@ var script = {
   name: 'InputTextarea'
 };
 
-function render(_ctx, _cache, $props, $setup, $data, $options) {
-  const _component_input_textarea = resolveComponent("input-textarea", true);
+const _hoisted_1 = { name: "[DEV] BRANCH textarea" };
 
-  return (openBlock(), createBlock(_component_input_textarea, { name: "[DEV] BRANCH textarea" }))
+function render(_ctx, _cache, $props, $setup, $data, $options) {
+  return (openBlock(), createElementBlock("textarea", _hoisted_1))
 }
 
 script.render = render;
