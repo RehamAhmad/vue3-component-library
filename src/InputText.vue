@@ -1,6 +1,5 @@
 <template>
-    <input type="text" />
-    <p>[DEV] BRANCH input</p>
+    <input type="checkbox" name="[DEV] BRANCH input"/>
 </template>
 <script>
 export default {

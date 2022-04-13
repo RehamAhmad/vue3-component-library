@@ -1,6 +1,5 @@
 <template>
-    <textarea />
-    <p>[DEV] BRANCH textarea</p>
+    <input-textarea name="[DEV] BRANCH textarea" />
 </template>
 <script>
 export default {

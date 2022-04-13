@@ -1,17 +1,16 @@
-import { openBlock, createElementBlock, Fragment, createElementVNode } from 'vue';
+import { openBlock, createElementBlock, resolveComponent, createBlock } from 'vue';
 
 var script$1 = {
   name: 'InputText'
 };
 
-const _hoisted_1$1 = /*#__PURE__*/createElementVNode("input", { type: "text" }, null, -1 /* HOISTED */);
-const _hoisted_2$1 = /*#__PURE__*/createElementVNode("p", null, "[DEV] BRANCH input", -1 /* HOISTED */);
+const _hoisted_1 = {
+  type: "checkbox",
+  name: "[DEV] BRANCH input"
+};
 
 function render$1(_ctx, _cache, $props, $setup, $data, $options) {
-  return (openBlock(), createElementBlock(Fragment, null, [
-    _hoisted_1$1,
-    _hoisted_2$1
-  ], 64 /* STABLE_FRAGMENT */))
+  return (openBlock(), createElementBlock("input", _hoisted_1))
 }
 
 script$1.render = render$1;
@@ -21,14 +20,10 @@ var script = {
   name: 'InputTextarea'
 };
 
-const _hoisted_1 = /*#__PURE__*/createElementVNode("textarea", null, null, -1 /* HOISTED */);
-const _hoisted_2 = /*#__PURE__*/createElementVNode("p", null, "[DEV] BRANCH textarea", -1 /* HOISTED */);
-
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (openBlock(), createElementBlock(Fragment, null, [
-    _hoisted_1,
-    _hoisted_2
-  ], 64 /* STABLE_FRAGMENT */))
+  const _component_input_textarea = resolveComponent("input-textarea", true);
+
+  return (openBlock(), createBlock(_component_input_textarea, { name: "[DEV] BRANCH textarea" }))
 }
 
 script.render = render;
