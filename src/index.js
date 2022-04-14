@@ -1,6 +1,7 @@
 import components from'./components'
 import './styles/style.scss';
 
+
 const plugin = {
   install (Vue) {
     for (const prop in components) {
