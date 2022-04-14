@@ -4,8 +4,6 @@ import { importMetaAssets } from '@web/rollup-plugin-import-meta-assets'
 import scss from 'rollup-plugin-scss'
 import postcss from 'postcss'
 import autoprefixer from 'autoprefixer'
-const url = require('postcss-url');
-
 
 export default [
   {
@@ -31,18 +29,8 @@ export default [
         
       }),
       scss({
-        // format: 'css',
-        // file: 'dist/library.css',
-        // outputStyle: 'compressed',
         processor: () => postcss([autoprefixer()]),
-        
       
-      }),
-      url({
-        limit: 1024 * 10,
-        include: ['**/*.woff', '**/*.ttf'],
-        emitFile: true,
-        
       }),
       
       

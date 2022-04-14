@@ -2,10 +2,12 @@
 
 var vue = require('vue');
 
-const m = new URL((typeof document === 'undefined' ? new (require('u' + 'rl').URL)('file:' + __dirname + '/assets/home-f4d59f4f.jpg').href : new URL('assets/home-f4d59f4f.jpg', document.currentScript && document.currentScript.src || document.baseURI).href), (typeof document === 'undefined' ? new (require('u' + 'rl').URL)('file:' + __filename).href : (document.currentScript && document.currentScript.src || new URL('library.js', document.baseURI).href)));
+const l= new URL((typeof document === 'undefined' ? new (require('u' + 'rl').URL)('file:' + __dirname + '/assets/home-f4d59f4f.jpg').href : new URL('assets/home-f4d59f4f.jpg', document.currentScript && document.currentScript.src || document.baseURI).href), (typeof document === 'undefined' ? new (require('u' + 'rl').URL)('file:' + __filename).href : (document.currentScript && document.currentScript.src || new URL('library.js', document.baseURI).href)));
+
+
 var script$1 = {
   name: 'InputText',
-  data(){ return {logo:m}},
+  data(){ return {logo:l}},
 };
 
 const _hoisted_1$1 = { name: "[Master] BRANCH button" };
