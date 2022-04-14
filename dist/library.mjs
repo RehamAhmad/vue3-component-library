@@ -1,13 +1,18 @@
-import { openBlock, createElementBlock } from 'vue';
+import { openBlock, createElementBlock, createElementVNode } from 'vue';
 
+const m = new URL(new URL('assets/home-f4d59f4f.jpg', import.meta.url).href, import.meta.url);
 var script$1 = {
-  name: 'InputText'
+  name: 'InputText',
+  data(){ return {logo:m}},
 };
 
-const _hoisted_1 = { type: "text" };
+const _hoisted_1 = { name: "[Master] BRANCH button" };
+const _hoisted_2 = ["src"];
 
 function render$1(_ctx, _cache, $props, $setup, $data, $options) {
-  return (openBlock(), createElementBlock("input", _hoisted_1))
+  return (openBlock(), createElementBlock("button", _hoisted_1, [
+    createElementVNode("img", { src: $data.logo }, null, 8 /* PROPS */, _hoisted_2)
+  ]))
 }
 
 script$1.render = render$1;

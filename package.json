@@ -2,17 +2,14 @@
   "name": "vue3-component-library",
   "version": "0.0.1",
   "description": "",
- 
   "main": "dist/library.js",
   "module": "dist/library.mjs",
   "files": [
     "dist/*"
-  ]
- ,
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c"
-    
   },
   "keywords": [],
   "author": "",
@@ -23,6 +20,11 @@
   "devDependencies": {
     "rollup": "^2.70.1",
     "rollup-plugin-peer-deps-external": "^2.2.4",
-    "rollup-plugin-vue": "^6.0.0"
+    "rollup-plugin-vue": "^6.0.0",
+    "sass": "^1.50.0"
+  },
+  "dependencies": {
+    "@web/rollup-plugin-import-meta-assets": "^1.0.7",
+    "rollup-plugin-scss": "^3.0.0"
   }
 }
