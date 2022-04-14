@@ -6,9 +6,9 @@
     color: #fff;
   }
 
-  @font-face {
-    font-family: Roboto;
-    src: url('assets/fonts/Roboto-Medium.ttf')  format('truetype');
+  @mixin font-face {
+    font-family: 'Roboto';
+    src: url('../assets/fonts/Roboto-Medium.ttf')  format('opentype');
     font-weight: bold;
     font-style: italic;
 }
