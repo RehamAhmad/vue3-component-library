@@ -1,4 +1,4 @@
-import { openBlock, createElementBlock, createTextVNode, toDisplayString, createElementVNode } from 'vue';
+import { openBlock, createElementBlock, createElementVNode, createTextVNode, toDisplayString } from 'vue';
 
 const m = new URL(new URL('assets/home-7698ea03.png', import.meta.url).href, import.meta.url);
 var script = {
@@ -14,11 +14,11 @@ const _hoisted_1 = {
   name: "[DEV] BRANCH button",
   style: {"background-color":"#a80000","border-color":"#a80000","color":"#fff","width":"167","height":"40"}
 };
-const _hoisted_2 = /*#__PURE__*/createElementVNode("img", { src: "{{myImg}}" }, null, -1 /* HOISTED */);
+const _hoisted_2 = ["src"];
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   return (openBlock(), createElementBlock("button", _hoisted_1, [
-    _hoisted_2,
+    createElementVNode("img", { src: _ctx.myImg }, null, 8 /* PROPS */, _hoisted_2),
     createTextVNode(toDisplayString($props.buttonText), 1 /* TEXT */)
   ]))
 }

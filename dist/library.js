@@ -16,11 +16,11 @@ const _hoisted_1 = {
   name: "[DEV] BRANCH button",
   style: {"background-color":"#a80000","border-color":"#a80000","color":"#fff","width":"167","height":"40"}
 };
-const _hoisted_2 = /*#__PURE__*/vue.createElementVNode("img", { src: "{{myImg}}" }, null, -1 /* HOISTED */);
+const _hoisted_2 = ["src"];
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   return (vue.openBlock(), vue.createElementBlock("button", _hoisted_1, [
-    _hoisted_2,
+    vue.createElementVNode("img", { src: _ctx.myImg }, null, 8 /* PROPS */, _hoisted_2),
     vue.createTextVNode(vue.toDisplayString($props.buttonText), 1 /* TEXT */)
   ]))
 }
