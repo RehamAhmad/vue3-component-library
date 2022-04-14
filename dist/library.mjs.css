@@ -1,4 +1,11 @@
+@font-face {
+  font-family: Roboto;
+  src: url("../assets/fonts/Roboto-Medium.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
 button {
+  font-family: "Roboto", sans-serif;
   background: DarkGray;
   box-shadow: 0 0 1px rgba(169, 169, 169, 0.25);
   color: #fff;
@@ -29,4 +36,11 @@ button img {
 
 .warning {
   border-color: yellow;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("../assets/fonts/Roboto-Medium.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
 }

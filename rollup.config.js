@@ -19,12 +19,20 @@ export default [
       }
     ],
     plugins: [
-      vue(),
+      vue({preprocessStyles: true,
+        preprocessOptions: {
+          scss: {
+            additionalData: `@import 'src/styles/themeMixin.scss';`
+          },
+        },
+        
+      }),
       scss({
         // format: 'css',
         // file: 'dist/library.css',
         // outputStyle: 'compressed',
         processor: () => postcss([autoprefixer()]),
+        
       
       }),
        peerDepsExternal(),
