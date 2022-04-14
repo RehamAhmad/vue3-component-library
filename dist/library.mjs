@@ -1,6 +1,7 @@
 import { openBlock, createElementBlock, createElementVNode, createTextVNode, toDisplayString } from 'vue';
 
 const m = new URL(new URL('assets/home-7698ea03.png', import.meta.url).href, import.meta.url);
+
 var script = {
   
   name: 'DevButton',
@@ -10,10 +11,7 @@ var script = {
   }
 };
 
-const _hoisted_1 = {
-  name: "[DEV] BRANCH button",
-  style: {"background-color":"#a80000","border-color":"#a80000","color":"#fff","width":"167","height":"40"}
-};
+const _hoisted_1 = { name: "[DEV] BRANCH button" };
 const _hoisted_2 = ["src"];
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {

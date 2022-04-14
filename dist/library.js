@@ -3,6 +3,7 @@
 var vue = require('vue');
 
 const m = new URL((typeof document === 'undefined' ? new (require('u' + 'rl').URL)('file:' + __dirname + '/assets/home-7698ea03.png').href : new URL('assets/home-7698ea03.png', document.currentScript && document.currentScript.src || document.baseURI).href), (typeof document === 'undefined' ? new (require('u' + 'rl').URL)('file:' + __filename).href : (document.currentScript && document.currentScript.src || new URL('library.js', document.baseURI).href)));
+
 var script = {
   
   name: 'DevButton',
@@ -12,10 +13,7 @@ var script = {
   }
 };
 
-const _hoisted_1 = {
-  name: "[DEV] BRANCH button",
-  style: {"background-color":"#a80000","border-color":"#a80000","color":"#fff","width":"167","height":"40"}
-};
+const _hoisted_1 = { name: "[DEV] BRANCH button" };
 const _hoisted_2 = ["src"];
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
