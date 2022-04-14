@@ -6,7 +6,7 @@ const m = new URL((typeof document === 'undefined' ? new (require('u' + 'rl').UR
 var script = {
   
   name: 'DevButton',
-  data:{myImg:m},
+   data(){ return {logo:m}},
   props: {
     buttonText: String
   }
@@ -20,7 +20,7 @@ const _hoisted_2 = ["src"];
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   return (vue.openBlock(), vue.createElementBlock("button", _hoisted_1, [
-    vue.createElementVNode("img", { src: _ctx.myImg }, null, 8 /* PROPS */, _hoisted_2),
+    vue.createElementVNode("img", { src: $data.logo }, null, 8 /* PROPS */, _hoisted_2),
     vue.createTextVNode(vue.toDisplayString($props.buttonText), 1 /* TEXT */)
   ]))
 }

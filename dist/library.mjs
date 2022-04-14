@@ -4,7 +4,7 @@ const m = new URL(new URL('assets/home-7698ea03.png', import.meta.url).href, imp
 var script = {
   
   name: 'DevButton',
-  data:{myImg:m},
+   data(){ return {logo:m}},
   props: {
     buttonText: String
   }
@@ -18,7 +18,7 @@ const _hoisted_2 = ["src"];
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   return (openBlock(), createElementBlock("button", _hoisted_1, [
-    createElementVNode("img", { src: _ctx.myImg }, null, 8 /* PROPS */, _hoisted_2),
+    createElementVNode("img", { src: $data.logo }, null, 8 /* PROPS */, _hoisted_2),
     createTextVNode(toDisplayString($props.buttonText), 1 /* TEXT */)
   ]))
 }
