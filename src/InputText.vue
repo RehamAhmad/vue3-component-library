@@ -4,7 +4,7 @@
 <script>
 const m = new URL('./assets/images/home.jpg', import.meta.url);
 
-
+import './styles/fonts.js'
 export default {
   name: 'InputText',
   data(){ return {logo:m}},

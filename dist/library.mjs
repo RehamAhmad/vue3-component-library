@@ -1,8 +1,6 @@
 import { openBlock, createElementBlock, createElementVNode } from 'vue';
 
 const m = new URL(new URL('assets/home-f4d59f4f.jpg', import.meta.url).href, import.meta.url);
-
-
 var script$1 = {
   name: 'InputText',
   data(){ return {logo:m}},

@@ -1,5 +1,5 @@
 import components from'./components'
-import './styles/fonts.js'
+
 import './styles/themeMixin.scss';
 import './styles/style.scss';
 import './styles/fonts.scss';
