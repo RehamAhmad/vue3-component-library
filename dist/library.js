@@ -3,18 +3,17 @@
 var vue = require('vue');
 
 const m = new URL((typeof document === 'undefined' ? new (require('u' + 'rl').URL)('file:' + __dirname + '/assets/home-f4d59f4f.jpg').href : new URL('assets/home-f4d59f4f.jpg', document.currentScript && document.currentScript.src || document.baseURI).href), (typeof document === 'undefined' ? new (require('u' + 'rl').URL)('file:' + __filename).href : (document.currentScript && document.currentScript.src || new URL('library.js', document.baseURI).href)));
-let s = new URL((typeof document === 'undefined' ? new (require('u' + 'rl').URL)('file:' + __dirname + '/assets/Roboto-Medium-ea7a30f2.ttf').href : new URL('assets/Roboto-Medium-ea7a30f2.ttf', document.currentScript && document.currentScript.src || document.baseURI).href), (typeof document === 'undefined' ? new (require('u' + 'rl').URL)('file:' + __filename).href : (document.currentScript && document.currentScript.src || new URL('library.js', document.baseURI).href)));
 
 var script$1 = {
   name: 'InputText',
-  data(){ return {logo:m,ss:s}},
+  data(){ return {logo:m}},
 };
 
-const _hoisted_1 = { name: "[Master] BRANCH button" };
+const _hoisted_1$1 = { name: "[Master] BRANCH button" };
 const _hoisted_2 = ["src"];
 
 function render$1(_ctx, _cache, $props, $setup, $data, $options) {
-  return (vue.openBlock(), vue.createElementBlock("button", _hoisted_1, [
+  return (vue.openBlock(), vue.createElementBlock("button", _hoisted_1$1, [
     vue.createElementVNode("img", { src: $data.logo }, null, 8 /* PROPS */, _hoisted_2)
   ]))
 }
@@ -26,8 +25,10 @@ var script = {
   name: 'InputTextarea'
 };
 
+const _hoisted_1 = { name: "[Master] BRANCH button" };
+
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (vue.openBlock(), vue.createElementBlock("textarea"))
+  return (vue.openBlock(), vue.createElementBlock("button", _hoisted_1, "CLICK TEST FONT"))
 }
 
 script.render = render;

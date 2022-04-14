@@ -1,18 +1,17 @@
 import { openBlock, createElementBlock, createElementVNode } from 'vue';
 
 const m = new URL(new URL('assets/home-f4d59f4f.jpg', import.meta.url).href, import.meta.url);
-let s = new URL(new URL('assets/Roboto-Medium-ea7a30f2.ttf', import.meta.url).href, import.meta.url);
 
 var script$1 = {
   name: 'InputText',
-  data(){ return {logo:m,ss:s}},
+  data(){ return {logo:m}},
 };
 
-const _hoisted_1 = { name: "[Master] BRANCH button" };
+const _hoisted_1$1 = { name: "[Master] BRANCH button" };
 const _hoisted_2 = ["src"];
 
 function render$1(_ctx, _cache, $props, $setup, $data, $options) {
-  return (openBlock(), createElementBlock("button", _hoisted_1, [
+  return (openBlock(), createElementBlock("button", _hoisted_1$1, [
     createElementVNode("img", { src: $data.logo }, null, 8 /* PROPS */, _hoisted_2)
   ]))
 }
@@ -24,8 +23,10 @@ var script = {
   name: 'InputTextarea'
 };
 
+const _hoisted_1 = { name: "[Master] BRANCH button" };
+
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (openBlock(), createElementBlock("textarea"))
+  return (openBlock(), createElementBlock("button", _hoisted_1, "CLICK TEST FONT"))
 }
 
 script.render = render;
