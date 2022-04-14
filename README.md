@@ -1,4 +1,4 @@
-# vue-hello-world-simple
+# vue3-component-library
 
 ## Install
 ```

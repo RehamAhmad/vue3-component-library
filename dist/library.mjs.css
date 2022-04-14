@@ -1,1 +1,32 @@
-button{background-color:#5c0f5f;border-color:#cecaca;color:#fff;width:167;height:40}
+button {
+  background: DarkGray;
+  box-shadow: 0 0 1px rgba(169, 169, 169, 0.25);
+  color: #fff;
+  background-color: #5c0f5f;
+  border-color: #cecaca;
+  color: #fff;
+  width: 167;
+  height: 40;
+}
+button img {
+  height: 100;
+  width: 50;
+}
+
+.warning, .error, .success, .message {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+
+.success {
+  border-color: green;
+}
+
+.error {
+  border-color: red;
+}
+
+.warning {
+  border-color: yellow;
+}

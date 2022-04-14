@@ -2,6 +2,9 @@ import vue from 'rollup-plugin-vue'
 import peerDepsExternal from 'rollup-plugin-peer-deps-external'
 import { importMetaAssets } from '@web/rollup-plugin-import-meta-assets'
 import scss from 'rollup-plugin-scss'
+import postcss from 'postcss'
+import autoprefixer from 'autoprefixer'
+
 export default [
   {
     input: 'src/index.js',
@@ -18,9 +21,10 @@ export default [
     plugins: [
       vue(),
       scss({
-        format: 'css',
-        file: 'dist/library.css',
-        outputStyle: 'compressed'
+        // format: 'css',
+        // file: 'dist/library.css',
+        // outputStyle: 'compressed',
+        processor: () => postcss([autoprefixer()]),
       
       }),
        peerDepsExternal(),
