@@ -3,7 +3,7 @@
 </template>
 <script>
 const m = new URL('./assets/images/home.jpg', import.meta.url);
-const mm = new URL('./assets/fonts/Roboto-Medium.ttf', import.meta.url);
+
 
 export default {
   name: 'InputText',

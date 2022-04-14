@@ -1,9 +1,11 @@
 
 @import "./themeMixin.scss";
+$font-stack: Roboto,Ubuntu,sans-serif;
 
 button {
     @include theme;
     background-color: #5c0f5f;
+    font-family: $font-stack;
     border-color: #cecaca;
     color: #fff;width:167;
     height:40;
