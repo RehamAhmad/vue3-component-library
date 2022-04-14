@@ -55,7 +55,7 @@ function styleInject(css, ref) {
   }
 }
 
-var css_248z = "button{background-color:#5c0f5f;border-color:#cecaca;color:#fff;height:40;width:167}";
+var css_248z = "button {\n  background-color: #5c0f5f;\n  border-color: #cecaca;\n  color: #fff;\n  width: 167;\n  height: 40;\n}";
 styleInject(css_248z);
 
 const plugin = {
