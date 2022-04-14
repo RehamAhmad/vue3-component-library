@@ -1,6 +1,7 @@
 import { openBlock, createElementBlock, createElementVNode } from 'vue';
 
 const m = new URL(new URL('assets/home-f4d59f4f.jpg', import.meta.url).href, import.meta.url);
+new URL(new URL('assets/Roboto-Medium-ea7a30f2.ttf', import.meta.url).href, import.meta.url);
 
 var script$1 = {
   name: 'InputText',
@@ -34,7 +35,6 @@ script.__file = "src/InputTextarea.vue";
 
 var components = { InputTextarea: script, InputText: script$1 };
 
-new URL(new URL('assets/Roboto-Medium-ea7a30f2.ttf', import.meta.url).href, import.meta.url);
 const plugin = {
   install (Vue) {
     for (const prop in components) {

@@ -1,5 +1,6 @@
 
 @import "./themeMixin.scss";
+
 button {
     @include theme;
     background-color: #5c0f5f;

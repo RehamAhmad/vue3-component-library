@@ -1,3 +1,4 @@
+
 @mixin theme($theme: DarkGray) {
     font-family: 'Roboto', sans-serif;
     background: $theme;
@@ -7,7 +8,7 @@
 
   @font-face {
     font-family: Roboto;
-    src: url('../assets/fonts/Roboto-Medium.ttf')  format('truetype');
+    src: url('assets/fonts/Roboto-Medium.ttf')  format('truetype');
     font-weight: bold;
     font-style: italic;
 }
